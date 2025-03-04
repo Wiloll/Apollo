@@ -1,63 +1,64 @@
-# 🔥 Apollo – Нейронна мережа для виявлення шкідливого ПЗ
+# 🔥 Apollo – Neural Network for Malware Detection
 
-**Apollo** – це штучна нейронна мережа, розроблена для аналізу та виявлення комп'ютерних загроз на основі **евристичного аналізу**.
+**Apollo** is an artificial neural network designed to analyze and detect computer threats using **heuristic analysis**.
 
-## 🚀 Основні можливості
-- Виявлення шкідливого програмного забезпечення на основі **нейромережевого аналізу**
-- Використання **евристичного аналізу** замість традиційного сигнатурного
-- Автоматичне **навчання моделі** на нових файлах
-- **GUI-інтерфейс**, що дозволяє легко сканувати файли
+## 🚀 Key Features
+- Detection of malware using **neural network analysis**
+- Utilizes **heuristic analysis** instead of traditional signature-based detection
+- Automatic **model training** on new files
+- **GUI interface** for easy file scanning
 
-## 📌 Використані технології
-- **Мова програмування:** Python
-- **Фреймворки:** TensorFlow, Keras, Scikit-Learn
-- **Інструменти для аналізу PE-файлів:** pefile, pandas, numpy
-- **Графічний інтерфейс:** Tkinter, ttkbootstrap
+## 📌 Technologies Used
+- **Programming Language:** Python
+- **Frameworks:** TensorFlow, Keras, Scikit-Learn
+- **Tools for PE file analysis:** pefile, pandas, numpy
+- **Graphical Interface:** Tkinter, ttkbootstrap
 
-## ⚙️ Як встановити та запустити
+## ⚙️ Installation and Execution
 
-### 🔧 1. Встановлення необхідних бібліотек
+### 🔧 1. Install Required Libraries
 ```bash
 pip install -r requirements.txt
 ```
 
-### ▶️ 2. Запуск програми
+### ▶️ 2. Run the Program
 ```bash
 python analyze.py
 ```
 
-## 📊 Як працює Apollo?
-1. Завантажує PE-файл (.exe, .dll тощо)
-2. Витягує **ключові характеристики файлу** (кількість секцій, ентропія, точка входу тощо)
-3. Передає їх у **нейронну мережу**
-4. Нейронна мережа **визначає ймовірність** шкідливості файлу
-5. Результати відображаються в **GUI**
+## 📊 How Apollo Works
+1. Loads a PE file (.exe, .dll, etc.)
+2. Extracts **key file characteristics** (number of sections, entropy, entry point, etc.)
+3. Passes them to the **neural network**
+4. The neural network **determines the probability** of the file being malicious
+5. Results are displayed in the **GUI**
 
-## 📚 Структура проєкту
+## 📚 Project Structure
 ```
 📂 Apollo  
- ├── 📂 antivirus_dense_model    # Збережена модель нейронної мережі
- ├── 📜 scaler.pkl               # Скалер нейронної мережі
- ├── 📜 all_features.csv         # Датасет файлів  
- ├── 📜 analyze.py               # Основний скрипт
- ├── 📜 requirements.txt         # Необхідні бібліотеки  
- ├── 📜 README.md                # Опис проєкту  
+ ├── 📂 antivirus_dense_model    # Saved neural network model
+ ├── 📜 scaler.pkl               # Neural network scaler
+ ├── 📜 all_features.csv         # File dataset  
+ ├── 📜 analyze.py               # Main script
+ ├── 📜 requirements.txt         # Required libraries  
+ ├── 📜 README.md                # Project description  
 ```
 
-## 🖥 Інструкція використання
-1. **Запуск програми:** Відкрий `analyze.py`, щоб запустити GUI.
-2. **Аналіз файлів:**
-   - Натисніть **"Аналізувати файл"**.
-   - Виберіть файл для сканування.
-   - Отримайте результат про шкідливість файлу.
-3. **Навчання нейронної мережі:**
-   - Натисніть **"Навчити мережу"**.
-   - Дочекайтесь завершення навчання.
-   - Apollo оновить свої знання та покращить точність.
-4. **Перегляд статистики:**
-   - У GUI відображається кількість **безпечних** та **шкідливих файлів** у датасеті.
+## 🖥 Usage Instructions
+1. **Run the program:** Open `analyze.py` to launch the GUI.
+2. **File Analysis:**
+   - Click **"Analyze File"**.
+   - Select a file to scan.
+   - Get the result indicating whether the file is malicious.
+3. **Train the Neural Network:**
+   - Click **"Train Network"**.
+   - Wait for training to complete.
+   - Apollo will update its knowledge and improve accuracy.
+4. **View Statistics:**
+   - The GUI displays the number of **safe** and **malicious files** in the dataset.
 
-## 📜 Ліцензія
+## 📜 License
 MIT License
 
-📌 **Автор:** [Максим Пасько](https://github.com/Wiloll)
+📌 **Author:** [Maksym Pasko](https://github.com/Wiloll)
+
